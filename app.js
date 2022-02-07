@@ -17,3 +17,11 @@ function customCalculate() {
   const percentage = document.getElementById("customTip").value;
   calculate(percentage);
 }
+
+/* botón reset */
+function reset() {
+  bill.value = 0;
+  people.value = 0;
+  document.getElementById("tip-amount").innerHTML = ` `;
+  document.getElementById("total-amount").innerHTML = ` `;
+}
