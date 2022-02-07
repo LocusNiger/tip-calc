@@ -91,6 +91,14 @@ body {
     }
   }
 
+  /* Mensaje de error */
+  .calc-error {
+    text-align: center;
+    p {
+      margin: 2rem 0.2rem;
+    }
+  }
+
   /* Cuanto hay que pagar */
   .calc-total {
     display: flex;
@@ -125,6 +133,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
   }
+}
+
+/* ss */
+@media only screen and (min-width: 768px) {
 }

@@ -14,6 +14,12 @@ html {
   font-size: 1.6rem;
 }
 
+.errorStyle {
+  color: #fbca1f;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
 .shadow {
   text-shadow: 0.1em 0.1em black;
 }
@@ -108,6 +114,7 @@ body {
   /* Titulo 'bill' + input para cargar la cuenta */
   /* Título 'number of people' + input para cant. personas */
   /* Título 'Select tip' + botones */
+  /* Mensaje de error */
   /* Cuanto hay que pagar */
 }
 
@@ -236,6 +243,14 @@ body {
   color: black;
 }
 
+.calc-container .calc-error {
+  text-align: center;
+}
+
+.calc-container .calc-error p {
+  margin: 2rem 0.2rem;
+}
+
 .calc-container .calc-total {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +317,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
 }
+
+/* ss */
 /*# sourceMappingURL=style.css.map */
