@@ -1,0 +1,46 @@
+/* clase para los input */
+.inputStyle {
+  height: 2rem;
+  border: 0.5px solid white;
+  border-radius: 0.3rem;
+  background-color: #046582;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-align: end;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  font-size: 1.7rem;
+  width: 96%;
+}
+
+/* Estilo de los botones de la calculadora */
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+/* 'Botón' custom */
+.percCustom {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}

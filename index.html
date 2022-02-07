@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./calc.png" />
+    <title>Tip calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calc-title">
+      <h1 class="shadow">Tip calculator</h1>
+    </div>
+
+    <div class="calc-container">
+      <div class="calc-bill">
+        <label for="calcBill">Bill</label>
+        <input type="number" id="calcBill" class="inputStyle" />
+      </div>
+
+      <div class="calc-people">
+        <h2 class="textStyle">Number of people</h2>
+        <input type="number" id="calcPeople" value="1" class="inputStyle" />
+      </div>
+
+      <div class="calc-tip">
+        <p class="grid-1 textStyle">Select Tip %</p>
+        <button class="tipButton perc5" onclick="calculate(5)">5%</button>
+        <button class="tipButton perc10" onclick="calculate(10)">10%</button>
+        <button class="tipButton perc15" onclick="calculate(15)">15%</button>
+        <button class="tipButton perc25" onclick="calculate(25)">25%</button>
+        <button class="tipButton perc50" onclick="calculate(50)">50%</button>
+        <input
+          type="number"
+          class="percCustom"
+          id="customTip"
+          onchange="customCalculate()"
+          placeholder="Custom"
+        />
+      </div>
+
+      <div class="calc-total">
+        <div class="calc-amount">
+          <div class="calc-amount__text">
+            <p class="textStyle">Tip Amount</p>
+            <span class="textStyle">/person</span>
+          </div>
+          <p class="price textStyle shadow" id="tip-amount"></p>
+        </div>
+        <div class="total-amount">
+          <div class="total-amount__text">
+            <p class="textStyle">Total</p>
+            <span class="textStyle">/person</span>
+          </div>
+          <p class="price textStyle shadow" id="total-amount"></p>
+        </div>
+      </div>
+      <div class="reset-container">
+        <button class="resetButton">RESET</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
