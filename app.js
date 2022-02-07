@@ -20,6 +20,7 @@ function calculate(percentage) {
       totalPerPerson = roundToTwo(totalPerPerson);
       document.getElementById("tip-amount").innerHTML = `$ ${tipPerPerson}`;
       document.getElementById("total-amount").innerHTML = `$ ${totalPerPerson}`;
+      document.getElementById("text-error").innerHTML = ``;
     } else {
       // error por cant. de personas
       document.getElementById("tip-amount").innerHTML = ` `;
@@ -61,4 +62,5 @@ function reset() {
   people.value = 1;
   document.getElementById("tip-amount").innerHTML = ` `;
   document.getElementById("total-amount").innerHTML = ` `;
+  document.getElementById("customTip").placeholder = "Custom";
 }

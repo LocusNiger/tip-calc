@@ -136,6 +136,47 @@ body {
   }
 }
 
-/* ss */
-@media only screen and (min-width: 768px) {
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .calc-title {
+    h1 {
+      margin-top: 5rem;
+      font-size: 3.5rem;
+    }
+  }
+  .calc-container {
+    .calc-bill {
+      padding: 0 6rem;
+    }
+    .calc-people {
+      padding: 0 6rem;
+    }
+    .calc-tip {
+      padding: 0 6rem;
+      margin-top: 1rem;
+    }
+  }
 }
+
+/* Laptop */
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  .calc-title {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .calc-container {
+    .calc-bill {
+      padding: 0 8rem;
+    }
+    .calc-people {
+      padding: 0 8rem;
+    }
+    .calc-tip {
+      padding: 0 8rem;
+      margin-top: 1rem;
+      grid-column-gap: 5rem;
+      grid-row-gap: 2rem;
+    }
+  }
+} ;
